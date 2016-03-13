@@ -6,8 +6,8 @@ Sport social network
 
 | Name | GitHub | Twitter | Interests |
 | ---- | ------ | ------- | --------- | 
-| Minnie Mouse | minniemouse | minniemouse | web coding |
-| ... | ... | ... | ... |
+| Katerina | kaykaty | ?? | web coding |
+| Karen | karsco | SmudgePoppy | web coding, teaching |
 
 ## Overview
 
