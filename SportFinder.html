@@ -8,16 +8,21 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="stylesheets/SportifyTheme.css" />
   </head>
-  <body>
+  <body ng-app="sportPicker" ng-controller="listCtrl">
 	<div class="container-fluid text-center"> 
 		<div class="row-fluid" id="header">
 			<div class="span12 inverse">
 				<h1>Sportify</h1>
-				<a href="SportFinder.html"><h2>Find sports events and players in your area</h2></a>
 			</div>	
 		</div> <!--end of header row -->
-		<div class="row-fluid">
-			<iframe src="https://www.youtube.com/embed/SFjHCw67BqU" frameborder="2" allowfullscreen></iframe>
+		<div class="row-fluid" >
+			<div class="list-group">
+				<a href="#" class="list-group-item" ng-repeat="x in sports">
+					<span class="listLeft">{{x.sport}}</span>
+					<span><img src={{x.pic}} /></span>
+					<span class="glyphicon glyphicon-chevron-right nextArrow"></span>
+				</a>
+			</div>
 		</div>	
 	</div>
 	<nav class="navbar navbar-inverse navbar-fixed-bottom">
@@ -32,6 +37,7 @@
 	</nav>	
 	<!-- script loading -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="js/sportifyApp.js"></script>
   </body>
 </html>
 
